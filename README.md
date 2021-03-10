@@ -1,1 +1,1 @@
-# shopping_list
+# redux_exercises
