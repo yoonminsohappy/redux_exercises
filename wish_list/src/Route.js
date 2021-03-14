@@ -9,8 +9,8 @@ class Routes extends React.Component {
     return (
       <Router>
         <Switch>
-          {/* <Route exact path="/" component={ItemList} /> */}
-          <Route exact path="/" component={Item} />
+          <Route exact path="/" component={ItemList} />
+          {/* <Route exact path="/" component={Item} /> */}
           <Route exact path="/cart" component={Cart} />
         </Switch>
       </Router>

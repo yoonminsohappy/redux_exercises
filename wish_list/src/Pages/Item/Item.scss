@@ -1,29 +1,24 @@
 .Item {
-  //   border: 1px solid red;
   .itemContainer {
     width: 300px;
     height: auto;
-    border: 5px solid #e9f5ee;
+    border: 10px solid #e9f5ee;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     .itemImage {
       width: 300px;
       height: 300px;
-      //   border: 1px solid blue;
     }
     .itemInfo {
-      //   border: 1px solid palevioletred;
       background-color: #e9f5ee;
       padding-left: 10px;
       .itemName {
         font-size: 20px;
         margin-top: 10px;
-        // border: 1px solid purple;
       }
       .itemPrice {
         font-size: 20px;
-        // border: 1px solid orange;
         margin-top: 10px;
       }
     }
