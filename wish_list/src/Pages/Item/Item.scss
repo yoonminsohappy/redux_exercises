@@ -1,5 +1,6 @@
 .Item {
-  .itemContainer {
+  margin-bottom: 70px;
+  .frontContainer {
     width: 300px;
     height: auto;
     border: 10px solid #e9f5ee;
@@ -10,16 +11,25 @@
       width: 300px;
       height: 300px;
     }
-    .itemInfo {
+    .bottomWrapper {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
       background-color: #e9f5ee;
-      padding-left: 10px;
-      .itemName {
-        font-size: 20px;
-        margin-top: 10px;
+      padding-left: 5px;
+      .itemInfo {
+        .itemName {
+          font-size: 20px;
+          margin-top: 10px;
+        }
+        .itemPrice {
+          font-size: 20px;
+          margin-top: 10px;
+        }
       }
-      .itemPrice {
-        font-size: 20px;
-        margin-top: 10px;
+      .cartIcon {
+        width: 50px;
+        height: 50px;
       }
     }
   }

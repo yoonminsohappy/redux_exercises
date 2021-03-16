@@ -1,0 +1,51 @@
+.CartItem {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  border: 10px solid #e9f5ee;
+  margin: 30px 0 30px 0;
+  padding: 10px 0 10px 0;
+  .checkBox {
+    width: 25px;
+    height: 25px;
+  }
+  .imgWrapper {
+    width: 150px;
+    display: flex;
+    justify-content: center;
+
+    .img {
+      width: 100px;
+      height: 100px;
+    }
+  }
+
+  .name {
+    font-size: 20px;
+    width: 400px;
+    display: flex;
+    justify-content: center;
+  }
+  .controlQty {
+    display: flex;
+    .quantity {
+      font-size: 20px;
+    }
+    .plusBtn {
+      width: 25px;
+      height: 25px;
+      margin-left: 10px;
+    }
+    .minusBtn {
+      width: 25px;
+      height: 25px;
+      margin-left: 3px;
+    }
+  }
+  .price {
+    font-size: 20px;
+    width: 150px;
+    display: flex;
+    justify-content: center;
+  }
+}
