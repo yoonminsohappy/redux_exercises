@@ -1,18 +1,20 @@
 import React from "react";
 import "./CartFrame.scss";
 import CartItem from "../CartItem/CartItem";
+import { useSelector } from "react-redux";
 
-const ITEMS = [
-  { img: "images/cup.png", name: "퍼플마블", price: "21000" },
-  { img: "images/book.png", name: "달러구트 꿈 백화점", price: "13800" },
-  { img: "images/chesnut-pie.jpeg", name: "밤파이", price: "8500" },
-  { img: "images/cup.png", name: "퍼플마블", price: "21000" },
-  { img: "images/book.png", name: "달러구트 꿈 백화점", price: "13800" },
-  { img: "images/chesnut-pie.jpeg", name: "밤파이", price: "8500" },
-];
+// const ITEMS = [
+//   { img: "images/cup.png", name: "퍼플마블", price: "21000" },
+//   { img: "images/book.png", name: "달러구트 꿈 백화점", price: "13800" },
+//   { img: "images/chesnut-pie.jpeg", name: "밤파이", price: "8500" },
+//   { img: "images/cup.png", name: "퍼플마블", price: "21000" },
+//   { img: "images/book.png", name: "달러구트 꿈 백화점", price: "13800" },
+//   { img: "images/chesnut-pie.jpeg", name: "밤파이", price: "8500" },
+// ];₩
 
 const CartFrame = () => {
-  const orderedItem = ITEMS.map((item) => (
+  const cartItems = useSelector((store) => store.cartReducer);
+  const orderedItem = cartItems.map((item) => (
     <CartItem {...item} key={item.name} />
   ));
   return (
