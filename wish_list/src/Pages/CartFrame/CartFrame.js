@@ -10,12 +10,12 @@ import { useSelector } from "react-redux";
 //   { img: "images/cup.png", name: "퍼플마블", price: "21000" },
 //   { img: "images/book.png", name: "달러구트 꿈 백화점", price: "13800" },
 //   { img: "images/chesnut-pie.jpeg", name: "밤파이", price: "8500" },
-// ];₩
+// ];
 
 const CartFrame = () => {
   const cartItems = useSelector((store) => store.cartReducer);
-  const orderedItem = cartItems.map((item) => (
-    <CartItem {...item} key={item.name} />
+  const orderedItem = cartItems.map((item, i) => (
+    <CartItem item={item} key={i} />
   ));
   return (
     <div className="CartFrame">
